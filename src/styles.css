@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Baskerville' , sans-serif;
+    src: url(../fonts/ofont.ru_Baskerville\ WGL4\ BT.ttf);
+}
+.font-baskerville{
+    font-family: 'Baskerville' , sans-serif !important;
+}
+
+.color_222{
+    color: #222222;
+}
