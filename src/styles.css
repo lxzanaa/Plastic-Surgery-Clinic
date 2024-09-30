@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'Baskerville' , sans-serif;
-    src: url(../fonts/ofont.ru_Baskerville\ WGL4\ BT.ttf);
+    font-family: 'Baskerville';
+    src: url(../fonts/ofont.ru_Baskerville-WGL4-BT.ttf);
+    font-display: swap;
 }
 .font-baskerville{
-    font-family: 'Baskerville' , sans-serif !important;
+    font-family: 'Baskerville' ;
 }
-
 .color_222{
     color: #222222;
 }

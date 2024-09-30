@@ -6,23 +6,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main page</title>
     <link rel="icon" href="./img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
 
-    <header>
+    <header class="relative pt-4 pb-2.5 bg-white">
         <div>
-            <h2 class="color_222 italic text-[26px] leading-[21.21px] uppercase" >мероприятие открытие</h2>
+            <img class="absolute top-0 left-0" src="./img/header/left.png" alt="left">
+            <img class="absolute top-0 right-0" src="./img/header/right.png" alt="right">
+        </div>
+        <div class="flex items-center justify-between max-w-[1050px] px-5 mx-auto">
+            <h2 class="font-baskerville color_222 italic text-[26px] leading-[21.21px] uppercase">мероприятие
+                открытие</h2>
             <div>
-                <ul>
-                    <li class="color_222 " >Г.Москва, ул. Первая, д. 1 </li>
-                    <li class="color_222 " >20.09 18:00</li>
+                <ul class="flex items-center gap-11">
+                    <li class="color_222 text-base">Г.Москва, ул. Первая, д. 1 </li>
+                    <li class="color_222 text-base">20.09 18:00</li>
                 </ul>
             </div>
         </div>
     </header>
 
+    <div class="bg-cover bg-fixed py-3.5" style="background-image: url(./img/hero-bg.png);">
+        <header class="py-3.5">
+            <div class="max-w-[1440px] px-[15px] mx-auto flex items-center justify-between wow animate__animated animate__fadeInDown">
+                <a href="index.html">
+                    <img src="./img/header/header_logo.svg" alt="header logo">
+                </a>
+                <div>
+                    <ul class="flex items-center gap-5">
+                        <li><a class="text-[#F8F8F8] text-base transition-all hover:text-[#CEA763]" href="#">Клиника</a>
+                        </li>
+                        <li><a class="text-[#F8F8F8] text-base transition-all hover:text-[#CEA763]"
+                                href="#">Портфолио</a></li>
+                        <li><a class="text-[#F8F8F8] text-base transition-all hover:text-[#CEA763]"
+                                href="#">Специалисты</a></li>
+                        <li><a class="text-[#F8F8F8] text-base transition-all hover:text-[#CEA763]"
+                                href="#">Услуги/Цены</a></li>
+                        <li><a class="text-[#F8F8F8] text-base transition-all hover:text-[#CEA763]"
+                                href="#">Спецпредложения</a></li>
+                        <li><a class="text-[#F8F8F8] text-base transition-all hover:text-[#CEA763]"
+                                href="#">Контакты</a></li>
+                        <li><a class="text-[#F8F8F8] text-base transition-all hover:text-[#CEA763]"
+                                href="#">Пациентам</a></li>
+                    </ul>
+                </div>
+                <div class="flex items-center gap-4">
+                    <a class="text-[#F8F8F8] text-2xl transition-all hover:text-[#CEA763]"
+                        href="tel: +79998670724">+79998670724</a>
+                    <span>
+                        <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.944336 29.5367L3.03143 21.7832C1.34824 18.7629 0.813475 15.2384 1.52526 11.8565C2.23705 8.47458 4.14765 5.46214 6.90646 3.37194C9.66528 1.28174 13.0872 0.253997 16.5444 0.477293C20.0016 0.700588 23.2621 2.15995 25.7277 4.58758C28.1932 7.01521 29.6983 10.2483 29.9669 13.6935C30.2355 17.1387 29.2495 20.565 27.1898 23.3436C25.1302 26.1222 22.135 28.0668 18.754 28.8204C15.373 29.5741 11.8329 29.0864 8.78328 27.4467L0.944336 29.5367ZM9.16126 24.5453L9.64606 24.8321C11.8549 26.1381 14.4349 26.6785 16.9838 26.3692C19.5328 26.0599 21.9075 24.9182 23.7381 23.1221C25.5686 21.326 26.752 18.9763 27.104 16.4393C27.456 13.9023 26.9566 11.3204 25.6839 9.09594C24.4111 6.87151 22.4364 5.12952 20.0674 4.14143C17.6984 3.15333 15.0683 2.97464 12.5869 3.6332C10.1055 4.29176 7.91221 5.75058 6.3488 7.78232C4.78539 9.81405 3.9397 12.3046 3.94351 14.8658C3.94143 16.9894 4.53025 19.072 5.64441 20.8817L5.94844 21.3816L4.78164 25.7091L9.16126 24.5453Z"
+                                fill="#CEA763" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M20.9277 16.8567C20.6435 16.628 20.3107 16.4671 19.9547 16.3861C19.5987 16.3052 19.2289 16.3063 18.8734 16.3895C18.3393 16.6108 17.9942 17.4468 17.6491 17.8648C17.5763 17.965 17.4694 18.0353 17.3484 18.0624C17.2273 18.0896 17.1005 18.0718 16.9918 18.0123C15.0364 17.2484 13.3974 15.8475 12.341 14.0372C12.2509 13.9243 12.2082 13.7808 12.222 13.6371C12.2358 13.4934 12.305 13.3607 12.4149 13.2668C12.7998 12.8867 13.0824 12.416 13.2366 11.8981C13.2709 11.3268 13.1396 10.7578 12.8586 10.2589C12.6414 9.55939 12.228 8.93655 11.6672 8.46395C11.378 8.33419 11.0573 8.29069 10.7438 8.33868C10.4303 8.38667 10.1375 8.52411 9.90055 8.73442C9.48927 9.08836 9.16282 9.52981 8.94524 10.0263C8.72767 10.5227 8.62451 11.0615 8.64336 11.603C8.64463 11.9071 8.68326 12.2099 8.7584 12.5046C8.9492 13.2126 9.24263 13.8891 9.62939 14.5126C9.90843 14.9902 10.2129 15.4526 10.5415 15.8977C11.6093 17.3599 12.9516 18.6013 14.4938 19.5532C15.2677 20.0368 16.0948 20.4301 16.9589 20.7252C17.8564 21.131 18.8474 21.2868 19.8266 21.176C20.3845 21.0917 20.9131 20.872 21.3659 20.5362C21.8186 20.2003 22.1817 19.7586 22.4231 19.2499C22.565 18.9426 22.608 18.5991 22.5464 18.2664C22.3985 17.5861 21.4864 17.1845 20.9277 16.8567Z"
+                                fill="#CEA763" />
+                        </svg>
+                    </span>
+                </div>
+            </div>
+        </header>
+
+        <section class="pt-[294px] pb-8">
+            <div class="max-w-[1440px] px-[15px] mx-auto text-center">
+                <h1 class="text-[#F8F8F8] uppercase text-7xl text-right wow animate__animated animate__fadeInRight">Клиника пластической хирургии</h1>
+                <h1 class="text-[#F8F8F8] font-baskerville italic uppercase text-7xl mb-10 text-left wow animate__animated animate__fadeInLeft">и эстетической косметологии
+                </h1>
+
+                <div class="border inline-flex border-[#957C55] p-2.5 mb-8 wow animate__animated animate__fadeInUp">
+                    <a href="#"
+                        class="uppercase text-[#957C55] bg-[#F8F8F8] px-24 py-4 text-base transition-all hover:text-[#F8F8F8] hover:bg-[#957C55]">Записаться</a>
+                </div>
+                <span class="flex justify-center wow animate__animated animate__fadeInUp" >
+                    <svg width="22" height="34" viewBox="0 0 22 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.836426" y="0.743164" width="20.3283" height="32.0607" rx="10.1642" stroke="white" />
+                        <rect x="7.65039" y="5.33789" width="6.70022" height="10.936" rx="3.35011" stroke="white" />
+                    </svg>
+                </span>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>
