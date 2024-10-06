@@ -245,11 +245,11 @@
     </section>
 
 
-    <section class="pb-[124px]">
+    <section class="lg:pb-[124px] md:pb-20 pb-7">
         <div class="max-w-[1440px] md:px-[15px] mx-auto">
             <p class="text-[#957C55] text-base uppercase md:block hidden">Мы делаем</p>
             <h2
-                class="color_222  italic font-baskerville md:text-[80px] text-[35px] uppercase md:text-center text-left leading-[64px] mb-5">
+                class="color_222 px-[15px] italic font-baskerville md:text-[80px] text-[35px] uppercase md:text-center text-left leading-[64px] mb-5">
                 услуги
             </h2>
 
@@ -425,7 +425,7 @@
                 <!-- FAQ 5 end -->
             </div>
 
-            <div class="md:hidden block" >
+            <div class="md:hidden block">
                 <div class="border-t border-t-[#A9A19E]">
                     <div class="px-[13px] transition-all duration-1000">
                         <button id="mobile-accordion-btn" class="w-full py-2">
@@ -579,67 +579,91 @@
         </div>
     </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <section class="pt-[124px] pb-[238px] hidden">
+    <section class="lg:pt-[124px] lg:pb-[238px] py-20">
         <h1
-            class="color_222 wow animate__animated animate__fadeInRight italic font-baskerville text-center max-w-[1400px] mx-auto text-[80px] uppercase transition-all duration-1000">
+            class="color_222 wow animate__animated md:block hidden animate__fadeInRight italic font-baskerville text-center max-w-[1400px] mx-auto lg:text-[80px] lg:leading-[80px] md:text-xl uppercase transition-all duration-1000">
             которые рождают поистине настоящее
         </h1>
+
+        <div class="flex flex-col gap-10 md:hidden px-5 wow animate__animated animate__fadeInLeft">
+            <p class="color_222 italic font-baskerville text-[35px] uppercase">которые</p>
+            <p class="color_222 italic font-baskerville text-[35px] uppercase">Рождают</p>
+            <p class="color_222 italic font-baskerville text-[35px] uppercase">поистине</p>
+            <p class="color_222 italic font-baskerville text-[35px] uppercase">настоящее</p>
+        </div>
     </section>
 
-    <section class="py-8 bg-[#222222] hidden">
-        <div class="max-w-[1440px] px-[15px] mx-auto  border-t border-t-[#A9A19E]">
-            <p class="text-[#A9A19E] text-base pt-4">фото наших пациентов</p>
-            <h2 class="text-[#F8F8F8] italic font-baskerville text-[80px] uppercase text-center pb-8">чудо</h2>
+    <section class="py-8 bg-[#222222]">
+        <div class="max-w-[1440px] px-[15px] mx-auto  border-t border-t-[#A9A19E] pt-5">
+            <p class="text-[#A9A19E] text-base pt-4 md:block hidden mb-5">фото наших пациентов</p>
+            <!-- <h2 class="text-[#F8F8F8] italic font-baskerville text-[80px] uppercase text-center pb-8">чудо</h2> -->
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img class="max-w-[530.29px] w-full h-[663.2px] object-cover" src="./img/slider/1.png" alt="">
+                        <img class="max-w-[530.29px] w-full lg:h-[663.2px] md:h-[500px] h-[337.36px] object-cover"
+                            src="./img/slider/1.png" alt="">
                     </div>
                     <div class="swiper-slide">
-                        <img class="max-w-[530.29px] w-full h-[663.2px] object-cover" src="./img/slider/2.png" alt="">
+                        <img class="max-w-[530.29px] w-full lg:h-[663.2px] md:h-[500px] h-[337.36px] object-cover"
+                            src="./img/slider/2.png" alt="">
                     </div>
                     <div class="swiper-slide">
-                        <img class="max-w-[530.29px] w-full h-[663.2px] object-cover" src="./img/slider/3.png" alt="">
+                        <img class="max-w-[530.29px] w-full lg:h-[663.2px] md:h-[500px] h-[337.36px] object-cover"
+                            src="./img/slider/3.png" alt="">
                     </div>
                     <div class="swiper-slide">
-                        <img class="max-w-[530.29px] w-full h-[663.2px] object-cover" src="./img/slider/1.png" alt="">
+                        <img class="max-w-[530.29px] w-full lg:h-[663.2px] md:h-[500px] h-[337.36px] object-cover"
+                            src="./img/slider/1.png" alt="">
                     </div>
                     <div class="swiper-slide">
-                        <img class="max-w-[530.29px] w-full h-[663.2px] object-cover" src="./img/slider/2.png" alt="">
+                        <img class="max-w-[530.29px] w-full lg:h-[663.2px] md:h-[500px] h-[337.36px] object-cover"
+                            src="./img/slider/2.png" alt="">
                     </div>
                     <div class="swiper-slide">
-                        <img class="max-w-[530.29px] w-full h-[663.2px] object-cover" src="./img/slider/3.png" alt="">
+                        <img class="max-w-[530.29px] w-full lg:h-[663.2px] md:h-[500px] h-[337.36px] object-cover"
+                            src="./img/slider/3.png" alt="">
                     </div>
                 </div>
             </div>
+
+            <div class="flex justify-center md:hidden" >
+                <a class="inline-flex items-center gap-2 text-sm text-[#CEA763] uppercase pt-12 " href="./portfolio.html">
+                    Больше работ
+                    <span>
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 11.3125L11 1.3125M11 1.3125V11.3125M11 1.3125H1" stroke="#CEA763" />
+                        </svg>
+                    </span>
+                </a>
+            </div>
         </div>
     </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <section class="pt-[110px] pb-[184px] hidden">
@@ -903,7 +927,18 @@
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 2.5,
             spaceBetween: 30,
+            breakpoints: {
+                100: {
+                    slidesPerView: 1.2,
+                    spaceBetween: 18,
+                },
+                640: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 18,
+                },
+            },
         });
+
     </script>
 </body>
 
