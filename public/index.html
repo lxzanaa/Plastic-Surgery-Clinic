@@ -12,66 +12,153 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
+<style>
+    @media (max-width: 1250px) {
+        .header-mobile {
+            max-width: 700px;
+        }
+
+        .header_number {
+            font-size: 18px;
+        }
+
+        .header_items {
+            font-size: 13px;
+        }
+    }
+
+    @media (max-width: 1035px) {
+        .header_items {
+            display: none;
+        }
+    }
+</style>
+
 <body>
 
-    <header class="relative pt-4 pb-2 bg-white">
+    <header class="relative md:pt-4 pt-2 pb-2 bg-white">
         <div>
-            <img class="absolute top-0 left-0" src="./img/header/left.png" alt="left">
-            <img class="absolute top-0 right-0" src="./img/header/right.png" alt="right">
+            <img class="absolute top-0 lg:left-0 md:-left-14 -left-16 md:block hidden" src="./img/header/left.png"
+                alt="left">
+            <img class="absolute top-0 lg:right-0 md:-right-14 -right-16 md:block hidden" src="./img/header/right.png"
+                alt="right">
+            <img class="absolute bottom-0 left-0  md:hidden block" src="./img/header/left-mobile.png" alt="left">
+            <img class="absolute bottom-0 right-0 md:hidden block" src="./img/header/right-mobile.png" alt="right">
         </div>
-        <div class="flex items-center justify-between max-w-[1050px] px-5 mx-auto">
-            <h2 class="font-baskerville color_222 italic text-[26px] leading-[21.21px] uppercase">мероприятие
-                открытие</h2>
+        <div class="header-mobile md:flex items-center justify-between lg:max-w-[1050px] md:max-w-[600px]
+         px-5 mx-auto">
+            <h2
+                class="font-baskerville text-center color_222 italic lg:text-[26px] text-base lg:leading-[21.21px] uppercase">
+                мероприятие открытие</h2>
             <div>
-                <ul class="flex items-center gap-11">
-                    <li class="color_222 text-base">Г.Москва, ул. Первая, д. 1 </li>
-                    <li class="color_222 text-base">20.09 18:00</li>
+                <ul class="flex items-center gap-11 justify-center ">
+                    <li class="color_222 lg:text-base text-xs">Г.Москва, ул. Первая, д. 1 </li>
+                    <li class="color_222 lg:text-base text-xs">20.09 18:00</li>
                 </ul>
             </div>
         </div>
     </header>
 
-    <div class="bg-cover bg-fixed bg-center py-3.5" style="background-image: url(./img/hero-bg.png);">
+    <div class="bg-cover bg-fixed bg-center py-3.5 bg-[#3F4245]" style="background-image: url(./img/hero-bg.png);">
         <header class="py-3.5">
             <div
                 class="max-w-[1440px] px-[15px] mx-auto flex items-center justify-between wow animate__animated animate__fadeInDown">
                 <a href="index.html">
-                    <img src="./img/header/header_logo.svg" alt="header logo">
+                    <img class="max-w-[184px] w-full" src="./img/header/header_logo.svg" alt="header logo">
                 </a>
-                <div>
+                <div class="md:block hidden">
                     <ul class="flex items-center gap-5">
-                        <li><a class="text-[#F8F8F8] text-base transition-all hover:text-[#CEA763]" href="./clinic.html">Клиника</a>
+                        <li><a class="header_items text-[#F8F8F8] text-base transition-all hover:text-[#CEA763]"
+                                href="./clinic.html">Клиника</a>
                         </li>
-                        <li><a class="text-[#F8F8F8] text-base transition-all hover:text-[#CEA763]"
+                        <li><a class="header_items text-[#F8F8F8] text-base transition-all hover:text-[#CEA763]"
                                 href="#">Портфолио</a></li>
-                        <li><a class="text-[#F8F8F8] text-base transition-all hover:text-[#CEA763]"
+                        <li><a class="header_items text-[#F8F8F8] text-base transition-all hover:text-[#CEA763]"
                                 href="#">Специалисты</a></li>
-                        <li><a class="text-[#F8F8F8] text-base transition-all hover:text-[#CEA763]"
+                        <li><a class="header_items text-[#F8F8F8] text-base transition-all hover:text-[#CEA763]"
                                 href="#">Услуги/Цены</a></li>
-                        <li><a class="text-[#F8F8F8] text-base transition-all hover:text-[#CEA763]"
+                        <li><a class="header_items text-[#F8F8F8] text-base transition-all hover:text-[#CEA763]"
                                 href="#">Спецпредложения</a></li>
-                        <li><a class="text-[#F8F8F8] text-base transition-all hover:text-[#CEA763]"
+                        <li><a class="header_items text-[#F8F8F8] text-base transition-all hover:text-[#CEA763]"
                                 href="#">Контакты</a></li>
-                        <li><a class="text-[#F8F8F8] text-base transition-all hover:text-[#CEA763]"
+                        <li><a class="header_items text-[#F8F8F8] text-base transition-all hover:text-[#CEA763]"
                                 href="#">Пациентам</a></li>
                     </ul>
                 </div>
-                <div class="flex items-center gap-4">
-                    <a class="text-[#F8F8F8] text-2xl transition-all hover:text-[#CEA763]"
-                        href="tel: +79998670724">+79998670724</a>
-                    <span>
-                        <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M0.944336 29.5367L3.03143 21.7832C1.34824 18.7629 0.813475 15.2384 1.52526 11.8565C2.23705 8.47458 4.14765 5.46214 6.90646 3.37194C9.66528 1.28174 13.0872 0.253997 16.5444 0.477293C20.0016 0.700588 23.2621 2.15995 25.7277 4.58758C28.1932 7.01521 29.6983 10.2483 29.9669 13.6935C30.2355 17.1387 29.2495 20.565 27.1898 23.3436C25.1302 26.1222 22.135 28.0668 18.754 28.8204C15.373 29.5741 11.8329 29.0864 8.78328 27.4467L0.944336 29.5367ZM9.16126 24.5453L9.64606 24.8321C11.8549 26.1381 14.4349 26.6785 16.9838 26.3692C19.5328 26.0599 21.9075 24.9182 23.7381 23.1221C25.5686 21.326 26.752 18.9763 27.104 16.4393C27.456 13.9023 26.9566 11.3204 25.6839 9.09594C24.4111 6.87151 22.4364 5.12952 20.0674 4.14143C17.6984 3.15333 15.0683 2.97464 12.5869 3.6332C10.1055 4.29176 7.91221 5.75058 6.3488 7.78232C4.78539 9.81405 3.9397 12.3046 3.94351 14.8658C3.94143 16.9894 4.53025 19.072 5.64441 20.8817L5.94844 21.3816L4.78164 25.7091L9.16126 24.5453Z"
-                                fill="#CEA763" />
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M20.9277 16.8567C20.6435 16.628 20.3107 16.4671 19.9547 16.3861C19.5987 16.3052 19.2289 16.3063 18.8734 16.3895C18.3393 16.6108 17.9942 17.4468 17.6491 17.8648C17.5763 17.965 17.4694 18.0353 17.3484 18.0624C17.2273 18.0896 17.1005 18.0718 16.9918 18.0123C15.0364 17.2484 13.3974 15.8475 12.341 14.0372C12.2509 13.9243 12.2082 13.7808 12.222 13.6371C12.2358 13.4934 12.305 13.3607 12.4149 13.2668C12.7998 12.8867 13.0824 12.416 13.2366 11.8981C13.2709 11.3268 13.1396 10.7578 12.8586 10.2589C12.6414 9.55939 12.228 8.93655 11.6672 8.46395C11.378 8.33419 11.0573 8.29069 10.7438 8.33868C10.4303 8.38667 10.1375 8.52411 9.90055 8.73442C9.48927 9.08836 9.16282 9.52981 8.94524 10.0263C8.72767 10.5227 8.62451 11.0615 8.64336 11.603C8.64463 11.9071 8.68326 12.2099 8.7584 12.5046C8.9492 13.2126 9.24263 13.8891 9.62939 14.5126C9.90843 14.9902 10.2129 15.4526 10.5415 15.8977C11.6093 17.3599 12.9516 18.6013 14.4938 19.5532C15.2677 20.0368 16.0948 20.4301 16.9589 20.7252C17.8564 21.131 18.8474 21.2868 19.8266 21.176C20.3845 21.0917 20.9131 20.872 21.3659 20.5362C21.8186 20.2003 22.1817 19.7586 22.4231 19.2499C22.565 18.9426 22.608 18.5991 22.5464 18.2664C22.3985 17.5861 21.4864 17.1845 20.9277 16.8567Z"
-                                fill="#CEA763" />
-                        </svg>
-                    </span>
+
+                <div class="flex items-center md:gap-5">
+                    <div class="flex items-center gap-2">
+                        <span class="transition-all hover:scale-110 lg:hidden flex hover:opacity-85">
+                            <a href="tel: ">
+                                <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="17.1047" cy="17.0002" r="15.929" stroke="#CEA763" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M21.579 19.5018C21.3431 19.2996 21.0641 19.1538 20.7632 19.0754C20.4623 18.9971 20.1474 18.9882 19.8426 19.0496C19.382 19.2238 19.0661 19.9264 18.7612 20.2731C18.6966 20.3564 18.6037 20.4134 18.4999 20.4333C18.3962 20.4533 18.2887 20.4347 18.1977 20.3812C16.5533 19.679 15.1951 18.443 14.3438 16.8738C14.2701 16.7752 14.2376 16.652 14.2531 16.53C14.2687 16.4081 14.3311 16.2969 14.4272 16.2199C14.7649 15.9065 15.018 15.5133 15.163 15.0764C15.2073 14.591 15.1107 14.1031 14.8847 13.6709C14.7183 13.0697 14.3829 12.5285 13.918 12.1113C13.6752 11.9931 13.4033 11.9476 13.1352 11.9801C12.8671 12.0127 12.6141 12.1219 12.4068 12.2947C12.0473 12.5851 11.7577 12.9522 11.5593 13.3691C11.3609 13.786 11.2588 14.2419 11.2605 14.7034C11.2535 14.9623 11.2784 15.2211 11.3345 15.474C11.4782 16.0818 11.71 16.6655 12.0227 17.2066C12.2476 17.6206 12.4946 18.0223 12.7625 18.41C13.6327 19.683 14.7425 20.7755 16.0302 21.6267C16.6762 22.059 17.37 22.4158 18.0977 22.6899C18.851 23.0592 19.6906 23.2181 20.5271 23.1497C21.0043 23.0928 21.4601 22.9198 21.8545 22.6459C22.2488 22.372 22.5697 22.0055 22.7887 21.5789C22.9176 21.321 22.9634 21.0297 22.9197 20.7449C22.8118 20.1618 22.046 19.7957 21.579 19.5018Z"
+                                        fill="#CEA763" />
+                                </svg>
+                            </a>
+                        </span>
+                        <span class="transition-all hover:scale-110 lg:hidden flex hover:opacity-85">
+                            <a target="_blank" href="#">
+                                <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="17.3235" cy="17.0002" r="15.929" stroke="#CEA763" />
+                                    <path
+                                        d="M9.12109 25.2099L10.2992 20.8333C9.34908 19.1285 9.04723 17.139 9.449 15.2301C9.85078 13.3211 10.9292 11.6207 12.4865 10.4409C14.0437 9.26107 15.9753 8.68095 17.9267 8.80699C19.8782 8.93303 21.7186 9.75678 23.1103 11.1271C24.502 12.4974 25.3516 14.3223 25.5032 16.267C25.6548 18.2117 25.0982 20.1457 23.9356 21.7141C22.773 23.2825 21.0824 24.3802 19.1739 24.8056C17.2655 25.231 15.2672 24.9557 13.5459 24.0301L9.12109 25.2099ZM13.7592 22.3924L14.0329 22.5543C15.2797 23.2915 16.736 23.5965 18.1747 23.4219C19.6135 23.2473 20.954 22.6029 21.9873 21.5891C23.0205 20.5753 23.6885 19.249 23.8872 17.8169C24.0859 16.3849 23.804 14.9275 23.0856 13.6719C22.3672 12.4163 21.2525 11.433 19.9153 10.8752C18.5781 10.3175 17.0935 10.2166 15.6929 10.5884C14.2922 10.9601 13.0542 11.7836 12.1717 12.9304C11.2892 14.0772 10.8119 15.483 10.814 16.9287C10.8128 18.1274 11.1452 19.303 11.7741 20.3244L11.9457 20.6067L11.2871 23.0494L13.7592 22.3924Z"
+                                        fill="#CEA763" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M20.4009 18.0525C20.2405 17.9234 20.0526 17.8326 19.8517 17.7869C19.6508 17.7412 19.442 17.7419 19.2414 17.7888C18.9399 17.9137 18.7451 18.3856 18.5503 18.6215C18.5092 18.6781 18.4488 18.7178 18.3805 18.7331C18.3122 18.7484 18.2406 18.7384 18.1792 18.7048C17.0755 18.2736 16.1504 17.4829 15.554 16.461C15.5032 16.3973 15.4791 16.3163 15.4869 16.2352C15.4947 16.1541 15.5337 16.0791 15.5958 16.0262C15.8131 15.8116 15.9726 15.5459 16.0596 15.2536C16.0789 14.9311 16.0049 14.6099 15.8462 14.3283C15.7236 13.9335 15.4903 13.5819 15.1737 13.3151C15.0105 13.2419 14.8294 13.2173 14.6525 13.2444C14.4756 13.2715 14.3102 13.3491 14.1765 13.4678C13.9444 13.6676 13.7601 13.9168 13.6373 14.197C13.5145 14.4772 13.4562 14.7814 13.4669 15.087C13.4676 15.2587 13.4894 15.4296 13.5318 15.5959C13.6395 15.9956 13.8051 16.3774 14.0235 16.7294C14.181 16.999 14.3528 17.2599 14.5383 17.5112C15.141 18.3365 15.8987 19.0373 16.7692 19.5746C17.2061 19.8476 17.673 20.0696 18.1607 20.2361C18.6673 20.4652 19.2267 20.5531 19.7794 20.4906C20.0943 20.443 20.3927 20.319 20.6482 20.1294C20.9038 19.9399 21.1087 19.6905 21.245 19.4034C21.3251 19.2299 21.3494 19.036 21.3146 18.8482C21.2311 18.4642 20.7163 18.2376 20.4009 18.0525Z"
+                                        fill="#CEA763" />
+                                </svg>
+                            </a>
+                        </span>
+                        <button
+                            class="transition-all hover:scale-110 lg:hidden flex hover:opacity-85 flex-col gap-[2px] bg-[#CEA763] w-8 h-8 rounded-full justify-center items-center">
+                            <div class="bg-white w-[18px] h-[1px] transition-all"></div>
+                            <div class="bg-white w-[18px] h-[1px] transition-all"></div>
+                            <div class="bg-white w-[18px] h-[1px] transition-all"></div>
+                        </button>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <a class="header_number text-[#F8F8F8] md:block hidden text-2xl transition-all hover:text-[#CEA763]"
+                            href="tel: +79998670724">+79998670724</a>
+                        <span class="md:block hidden">
+                            <svg width="31" height="30" viewBox="0 0 31 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.944336 29.5367L3.03143 21.7832C1.34824 18.7629 0.813475 15.2384 1.52526 11.8565C2.23705 8.47458 4.14765 5.46214 6.90646 3.37194C9.66528 1.28174 13.0872 0.253997 16.5444 0.477293C20.0016 0.700588 23.2621 2.15995 25.7277 4.58758C28.1932 7.01521 29.6983 10.2483 29.9669 13.6935C30.2355 17.1387 29.2495 20.565 27.1898 23.3436C25.1302 26.1222 22.135 28.0668 18.754 28.8204C15.373 29.5741 11.8329 29.0864 8.78328 27.4467L0.944336 29.5367ZM9.16126 24.5453L9.64606 24.8321C11.8549 26.1381 14.4349 26.6785 16.9838 26.3692C19.5328 26.0599 21.9075 24.9182 23.7381 23.1221C25.5686 21.326 26.752 18.9763 27.104 16.4393C27.456 13.9023 26.9566 11.3204 25.6839 9.09594C24.4111 6.87151 22.4364 5.12952 20.0674 4.14143C17.6984 3.15333 15.0683 2.97464 12.5869 3.6332C10.1055 4.29176 7.91221 5.75058 6.3488 7.78232C4.78539 9.81405 3.9397 12.3046 3.94351 14.8658C3.94143 16.9894 4.53025 19.072 5.64441 20.8817L5.94844 21.3816L4.78164 25.7091L9.16126 24.5453Z"
+                                    fill="#CEA763" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M20.9277 16.8567C20.6435 16.628 20.3107 16.4671 19.9547 16.3861C19.5987 16.3052 19.2289 16.3063 18.8734 16.3895C18.3393 16.6108 17.9942 17.4468 17.6491 17.8648C17.5763 17.965 17.4694 18.0353 17.3484 18.0624C17.2273 18.0896 17.1005 18.0718 16.9918 18.0123C15.0364 17.2484 13.3974 15.8475 12.341 14.0372C12.2509 13.9243 12.2082 13.7808 12.222 13.6371C12.2358 13.4934 12.305 13.3607 12.4149 13.2668C12.7998 12.8867 13.0824 12.416 13.2366 11.8981C13.2709 11.3268 13.1396 10.7578 12.8586 10.2589C12.6414 9.55939 12.228 8.93655 11.6672 8.46395C11.378 8.33419 11.0573 8.29069 10.7438 8.33868C10.4303 8.38667 10.1375 8.52411 9.90055 8.73442C9.48927 9.08836 9.16282 9.52981 8.94524 10.0263C8.72767 10.5227 8.62451 11.0615 8.64336 11.603C8.64463 11.9071 8.68326 12.2099 8.7584 12.5046C8.9492 13.2126 9.24263 13.8891 9.62939 14.5126C9.90843 14.9902 10.2129 15.4526 10.5415 15.8977C11.6093 17.3599 12.9516 18.6013 14.4938 19.5532C15.2677 20.0368 16.0948 20.4301 16.9589 20.7252C17.8564 21.131 18.8474 21.2868 19.8266 21.176C20.3845 21.0917 20.9131 20.872 21.3659 20.5362C21.8186 20.2003 22.1817 19.7586 22.4231 19.2499C22.565 18.9426 22.608 18.5991 22.5464 18.2664C22.3985 17.5861 21.4864 17.1845 20.9277 16.8567Z"
+                                    fill="#CEA763" />
+                            </svg>
+                        </span>
+                    </div>
                 </div>
             </div>
         </header>
+        <div class="px-5 bg-white -top-full pb-20 pt-3 fixed left-0 w-full transition-all" >
+            <div class="flex justify-end mb-8" >
+                <button
+                    class="relative transition-all hover:scale-110 lg:hidden flex hover:opacity-85 bg-[#CEA763] w-8 h-8 rounded-full justify-center items-center">
+                    <div class="absolute bg-white w-5 h-[1px] transition-all transform rotate-45"></div>
+                    <div class="absolute bg-white w-5 h-[1px] transition-all transform -rotate-45"></div>
+                </button>
+            </div>
+            <div>
+                <ul class="flex flex-col gap-8" >
+                    <li class="transition-all hover:text-[#CEA763] text-center" ><a class="color_222 text-2xl" href="./clinic.html">Клиника</a></li>
+                    <li class="transition-all hover:text-[#CEA763] text-center" ><a class="color_222 text-2xl" href="./portfolio.html">Портфолио</a></li>
+                    <li class="transition-all hover:text-[#CEA763] text-center" ><a class="color_222 text-2xl" href="./specialists.html">Специалисты</a></li>
+                    <li class="transition-all hover:text-[#CEA763] text-center" ><a class="color_222 text-2xl" href="./services.html">Услуги/Цены</a></li>
+                    <li class="transition-all hover:text-[#CEA763] text-center" ><a class="color_222 text-2xl" href="./special-offers.html">Спецпредложения</a></li>
+                    <li class="transition-all hover:text-[#CEA763] text-center" ><a class="color_222 text-2xl" href="./contact.html">Контакты</a></li>
+                    <li class="transition-all hover:text-[#CEA763] text-center" ><a class="color_222 text-2xl" href="./for-patients.html">Пациентам</a></li>
+                </ul>
+            </div>
+        </div>
 
         <section class="pt-[294px] pb-8">
             <div class="max-w-[1440px] px-[15px] mx-auto text-center">
@@ -96,7 +183,24 @@
         </section>
     </div>
 
-    <section class="py-24">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="py-24 hidden">
         <div class="max-w-[1440px] px-[15px] mx-auto">
             <p class="text-[#957C55] text-base uppercase">Наши преимущества</p>
             <h2 class="color_222 italic font-baskerville text-[80px] uppercase text-center leading-[64px] mb-5">мы это —
@@ -136,7 +240,7 @@
         </div>
     </section>
 
-    <section class="pb-[124px]">
+    <section class="pb-[124px] hidden">
         <div class="max-w-[1440px] px-[15px] mx-auto">
             <p class="text-[#957C55] text-base uppercase">Мы делаем</p>
             <h2 class="color_222 italic font-baskerville text-[80px] uppercase text-center leading-[64px] mb-5">услуги
@@ -311,14 +415,14 @@
         </div>
     </section>
 
-    <section class="pt-[124px] pb-[238px]">
+    <section class="pt-[124px] pb-[238px] hidden">
         <h1
             class="color_222 wow animate__animated animate__fadeInRight italic font-baskerville text-center max-w-[1400px] mx-auto text-[80px] uppercase transition-all duration-1000">
             которые рождают поистине настоящее
         </h1>
     </section>
 
-    <section class="py-8 bg-[#222222] ">
+    <section class="py-8 bg-[#222222] hidden">
         <div class="max-w-[1440px] px-[15px] mx-auto  border-t border-t-[#A9A19E]">
             <p class="text-[#A9A19E] text-base pt-4">фото наших пациентов</p>
             <h2 class="text-[#F8F8F8] italic font-baskerville text-[80px] uppercase text-center pb-8">чудо</h2>
@@ -348,7 +452,7 @@
     </section>
 
 
-    <section class="pt-[110px] pb-[184px]">
+    <section class="pt-[110px] pb-[184px] hidden">
         <div class="max-w-[1440px] px-[15px] mx-auto">
             <h2 class="flex items-center justify-center gap-1 color_222 text-[80px] italic text-center uppercase mb-20">
                 <span>
@@ -417,7 +521,7 @@
         </div>
     </section>
 
-    <section class="py-8 pb-11 bg-[#222222] ">
+    <section class="py-8 pb-11 bg-[#222222] hidden">
         <div class="max-w-[1440px] px-[15px] mx-auto  border-t border-t-[#A9A19E]">
             <p class="text-[#A9A19E] text-base pt-4">отзывы</p>
             <h2 class="text-[#F8F8F8] italic font-baskerville text-[80px] uppercase text-center pb-8">Те, кто нам
@@ -447,7 +551,7 @@
         </div>
     </section>
 
-    <div class="bg-[#222222]">
+    <div class="bg-[#222222] hidden">
         <section class="pt-11 ">
             <div class="max-w-[1440px] px-[15px] mx-auto flex items-center justify-between">
                 <div>
@@ -542,19 +646,23 @@
                                 fill="#CEA763" />
                         </svg>
                     </span>
-                    <div class="" >
+                    <div class="">
                         <h1 class="text-[#F8F8F8] leading-[188.22px] -translate-y-5 text-[171.11px] uppercase"
-                        style="letter-spacing: 30px;">aesthetics</h1>
+                            style="letter-spacing: 30px;">aesthetics</h1>
                         <ul class="flex items-center gap-10 mb-5 justify-end">
-                            <li><a class="text-[#F1EEEA] transition-all hover:opacity-80 text-base" href="tel: +79057873030">+79057873030</a></li>
+                            <li><a class="text-[#F1EEEA] transition-all hover:opacity-80 text-base"
+                                    href="tel: +79057873030">+79057873030</a></li>
                             <li><a class="text-[#F1EEEA] transition-all hover:opacity-80 text-base"
                                     href="mailto: 7aesthetics@mail.ru">7aesthetics@mail.ru</a></li>
-                            <li><a class="text-[#F1EEEA] transition-all hover:opacity-80 text-base" href="#">Орликов переулок, 4</a></li>
-                            <li><a class="text-[#F1EEEA] transition-all hover:opacity-80 text-base" href="#">WhatsApp</a></li>
-                            <li><a class="inline-flex gap-[50px] items-center py-2 px-1 border-b text-[#F8F8F8] text-base" href="#">Записаться <span><svg width="21" height="20" viewBox="0 0 21 20" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <mask id="mask0_799_13" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0"
-                                                y="0" width="21" height="20">
+                            <li><a class="text-[#F1EEEA] transition-all hover:opacity-80 text-base" href="#">Орликов
+                                    переулок, 4</a></li>
+                            <li><a class="text-[#F1EEEA] transition-all hover:opacity-80 text-base"
+                                    href="#">WhatsApp</a></li>
+                            <li><a class="inline-flex gap-[50px] items-center py-2 px-1 border-b text-[#F8F8F8] text-base"
+                                    href="#">Записаться <span><svg width="21" height="20" viewBox="0 0 21 20"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="mask0_799_13" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                                x="0" y="0" width="21" height="20">
                                                 <rect x="0.423828" width="20" height="20" fill="#D9D9D9" />
                                             </mask>
                                             <g mask="url(#mask0_799_13)">
@@ -565,17 +673,25 @@
                                         </svg>
                                     </span></a></li>
                         </ul>
-                        <ul class="flex items-center gap-8 justify-end mb-20" >
-                            <li><a class="text-[#F8F8F8] text-base transition-all hover:opacity-80" href="#">О клинике</a></li>
-                            <li><a class="text-[#F8F8F8] text-base transition-all hover:opacity-80" href="#">Услуги</a></li>
-                            <li><a class="text-[#F8F8F8] text-base transition-all hover:opacity-80" href="#">Работы до/после</a></li>
-                            <li><a class="text-[#F8F8F8] text-base transition-all hover:opacity-80" href="#">Специалисты</a></li>
-                            <li><a class="text-[#F8F8F8] text-base transition-all hover:opacity-80" href="#">Спецпредложения</a></li>
-                            <li><a class="text-[#F8F8F8] text-base transition-all hover:opacity-80" href="#">Контакты</a></li>
-                            <li><a class="text-[#F8F8F8] text-base transition-all hover:opacity-80" href="#">Пациентам</a></li>
+                        <ul class="flex items-center gap-8 justify-end mb-20">
+                            <li><a class="text-[#F8F8F8] text-base transition-all hover:opacity-80" href="#">О
+                                    клинике</a></li>
+                            <li><a class="text-[#F8F8F8] text-base transition-all hover:opacity-80" href="#">Услуги</a>
+                            </li>
+                            <li><a class="text-[#F8F8F8] text-base transition-all hover:opacity-80" href="#">Работы
+                                    до/после</a></li>
+                            <li><a class="text-[#F8F8F8] text-base transition-all hover:opacity-80"
+                                    href="#">Специалисты</a></li>
+                            <li><a class="text-[#F8F8F8] text-base transition-all hover:opacity-80"
+                                    href="#">Спецпредложения</a></li>
+                            <li><a class="text-[#F8F8F8] text-base transition-all hover:opacity-80"
+                                    href="#">Контакты</a></li>
+                            <li><a class="text-[#F8F8F8] text-base transition-all hover:opacity-80"
+                                    href="#">Пациентам</a></li>
                         </ul>
-                        <ul class="flex items-center gap-10 justify-end " >
-                            <li><a class="text-[#F8F8F8] text-base pr-[100px]" href="#">Сделали: <span class="underline" >ребята из .корни</span></a></li>
+                        <ul class="flex items-center gap-10 justify-end ">
+                            <li><a class="text-[#F8F8F8] text-base pr-[100px]" href="#">Сделали: <span
+                                        class="underline">ребята из .корни</span></a></li>
                             <li><a class="text-[#F8F8F8] text-base" href="#">Правовая информация</a></li>
                             <li><a class="text-[#F8F8F8] text-base" href="#">Политика конфиденциальности</a></li>
                             <li><a class="text-[#F8F8F8] text-base" href="#">Лицензия</a></li>
