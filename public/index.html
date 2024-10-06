@@ -63,7 +63,7 @@
         <header class="py-3.5">
             <div
                 class="max-w-[1440px] px-[15px] mx-auto flex items-center justify-between wow animate__animated animate__fadeInDown">
-                <a href="index.html">
+                <a href="index.html" class="pr-3">
                     <img class="max-w-[184px] w-full" src="./img/header/header_logo.svg" alt="header logo">
                 </a>
                 <div class="md:block hidden">
@@ -113,7 +113,7 @@
                                 </svg>
                             </a>
                         </span>
-                        <button
+                        <button id="nav-open-button"
                             class="transition-all hover:scale-110 lg:hidden flex hover:opacity-85 flex-col gap-[2px] bg-[#CEA763] w-8 h-8 rounded-full justify-center items-center">
                             <div class="bg-white w-[18px] h-[1px] transition-all"></div>
                             <div class="bg-white w-[18px] h-[1px] transition-all"></div>
@@ -139,41 +139,51 @@
                 </div>
             </div>
         </header>
-        <div class="px-5 bg-white -top-full pb-20 pt-3 fixed left-0 w-full transition-all" >
-            <div class="flex justify-end mb-8" >
-                <button
+        <div id="mobile-navbar"
+            class="px-5 bg-white -top-full pb-20 pt-3 fixed left-0 w-full transition-all duration-200">
+            <div class="flex justify-end mb-8">
+                <button id="nav-close-button"
                     class="relative transition-all hover:scale-110 lg:hidden flex hover:opacity-85 bg-[#CEA763] w-8 h-8 rounded-full justify-center items-center">
                     <div class="absolute bg-white w-5 h-[1px] transition-all transform rotate-45"></div>
                     <div class="absolute bg-white w-5 h-[1px] transition-all transform -rotate-45"></div>
                 </button>
             </div>
             <div>
-                <ul class="flex flex-col gap-8" >
-                    <li class="transition-all hover:text-[#CEA763] text-center" ><a class="color_222 text-2xl" href="./clinic.html">Клиника</a></li>
-                    <li class="transition-all hover:text-[#CEA763] text-center" ><a class="color_222 text-2xl" href="./portfolio.html">Портфолио</a></li>
-                    <li class="transition-all hover:text-[#CEA763] text-center" ><a class="color_222 text-2xl" href="./specialists.html">Специалисты</a></li>
-                    <li class="transition-all hover:text-[#CEA763] text-center" ><a class="color_222 text-2xl" href="./services.html">Услуги/Цены</a></li>
-                    <li class="transition-all hover:text-[#CEA763] text-center" ><a class="color_222 text-2xl" href="./special-offers.html">Спецпредложения</a></li>
-                    <li class="transition-all hover:text-[#CEA763] text-center" ><a class="color_222 text-2xl" href="./contact.html">Контакты</a></li>
-                    <li class="transition-all hover:text-[#CEA763] text-center" ><a class="color_222 text-2xl" href="./for-patients.html">Пациентам</a></li>
+                <ul class="flex flex-col gap-8">
+                    <li class="transition-all hover:text-[#CEA763] text-center"><a class="color_222 text-2xl"
+                            href="./clinic.html">Клиника</a></li>
+                    <li class="transition-all hover:text-[#CEA763] text-center"><a class="color_222 text-2xl"
+                            href="./portfolio.html">Портфолио</a></li>
+                    <li class="transition-all hover:text-[#CEA763] text-center"><a class="color_222 text-2xl"
+                            href="./specialists.html">Специалисты</a></li>
+                    <li class="transition-all hover:text-[#CEA763] text-center"><a class="color_222 text-2xl"
+                            href="./services.html">Услуги/Цены</a></li>
+                    <li class="transition-all hover:text-[#CEA763] text-center"><a class="color_222 text-2xl"
+                            href="./special-offers.html">Спецпредложения</a></li>
+                    <li class="transition-all hover:text-[#CEA763] text-center"><a class="color_222 text-2xl"
+                            href="./contact.html">Контакты</a></li>
+                    <li class="transition-all hover:text-[#CEA763] text-center"><a class="color_222 text-2xl"
+                            href="./for-patients.html">Пациентам</a></li>
                 </ul>
             </div>
         </div>
-
-        <section class="pt-[294px] pb-8">
-            <div class="max-w-[1440px] px-[15px] mx-auto text-center">
-                <h1 class="text-[#F8F8F8] uppercase text-7xl text-right wow animate__animated animate__fadeInRight">
+        <section class="lg:pt-[294px] pt-[180px] pb-8">
+            <div class="max-w-[1440px] md:px-[15px] mx-auto text-center">
+                <h1
+                    class="text-[#F8F8F8] uppercase lg:text-7xl md:text-4xl md:block hidden text-right wow animate__animated animate__fadeInRight">
                     Клиника пластической хирургии</h1>
                 <h1
-                    class="text-[#F8F8F8] font-baskerville italic uppercase text-7xl mb-10 text-left wow animate__animated animate__fadeInLeft">
+                    class="text-[#F8F8F8] font-baskerville italic uppercase lg:text-7xl md:text-4xl md:block hidden mb-10 text-left wow animate__animated animate__fadeInLeft">
                     и эстетической косметологии
                 </h1>
+                <h2 class="text-[#F8F8F8] text-2xl text-center uppercase mb-7 md:hidden block">Клиника пластической хирургии и <span
+                        class="italic font-baskerville">эстетической косметологии</span></h2>
 
-                <div class="border inline-flex border-[#957C55] p-2.5 mb-8 wow animate__animated animate__fadeInUp">
+                <div class="md:border inline-flex border-[#957C55] p-2.5 mb-8 wow animate__animated animate__fadeInUp">
                     <a href="#"
-                        class="uppercase text-[#957C55] bg-[#F8F8F8] px-24 py-4 text-base transition-all hover:text-[#F8F8F8] hover:bg-[#957C55]">Записаться</a>
+                        class="uppercase text-[#957C55] bg-[#F8F8F8] md:px-24 px-[60px] md:py-4 py-2.5 md:text-base text-sm transition-all hover:text-[#F8F8F8] hover:bg-[#957C55]">Записаться</a>
                 </div>
-                <span class="flex justify-center wow animate__animated animate__fadeInUp">
+                <span class="md:flex hidden justify-center wow animate__animated animate__fadeInUp">
                     <svg width="22" height="34" viewBox="0 0 22 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="0.836426" y="0.743164" width="20.3283" height="32.0607" rx="10.1642" stroke="white" />
                         <rect x="7.65039" y="5.33789" width="6.70022" height="10.936" rx="3.35011" stroke="white" />
@@ -183,87 +193,71 @@
         </section>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <section class="py-24 hidden">
+    <section class="md:py-24 py-6">
         <div class="max-w-[1440px] px-[15px] mx-auto">
-            <p class="text-[#957C55] text-base uppercase">Наши преимущества</p>
-            <h2 class="color_222 italic font-baskerville text-[80px] uppercase text-center leading-[64px] mb-5">мы это —
+            <p class="text-[#957C55] text-base uppercase lg:block hidden">Наши преимущества</p>
+            <h2 class="color_222 italic font-baskerville md:text-[80px] text-[35px] uppercase md:text-center text-left md:leading-[64px] mb-5">мы это —
             </h2>
-            <div class="flex gap-5 justify-center">
-                <div class="max-w-[336px]">
-                    <div class="border inline-flex border-[#A9A19E] p-5 mb-4">
-                        <img class="max-w-[297.95px] w-full h-[378.9px] object-cover" src="./img/we/1.png"
+            <div class="md:flex gap-5 justify-center max-w-[1000px] mx-auto">
+                <div class="md:max-w-[336px] max-w-[400px] w-full mx-auto mb-4">
+                    <div class="border inline-flex max-w-[400px] h-[194px] lg:h-[416px] w-full border-[#A9A19E] lg:p-5 md:p-2 p-1 md:mb-4 mb-3.5">
+                        <img class="md:max-w-[297.95px] w-full  object-cover" src="./img/we/1.png"
                             alt="Полный спектр услуг">
                     </div>
-                    <h4 class="color_222 font-medium text-base uppercase mb-3">Полный спектр услуг</h4>
-                    <p class="color_222 text-base ">Мы предлагаем широкий ассортимент услуг, от косметологических 
+                    <h4 class="color_222 font-medium lg:text-base md:text-sm text-base uppercase mb-3">Полный спектр услуг</h4>
+                    <p class="color_222 lg:text-base md:text-xs text-sm">Мы предлагаем широкий ассортимент услуг, от косметологических 
                         процедур, до комплексных хирургических операций. </p>
                 </div>
 
-                <div class="max-w-[416px]">
-                    <div class="border inline-flex border-[#A9A19E] p-5 mb-4">
-                        <img class="max-w-[378px] w-full h-[422.34px] object-cover" src="./img/we/2.png"
+                <div class="md:max-w-[416px] max-w-[400px] w-full mx-auto mb-4">
+                    <div class="border inline-flex max-w-[400px] h-[194px] lg:h-[460px] w-full border-[#A9A19E] lg:p-5 md:p-2 p-1 md:mb-4 mb-3.5">
+                        <img class="md:max-w-[378px] w-full object-cover" src="./img/we/2.png"
                             alt="Комплексное сопровождение пациента 24/7">
                     </div>
-                    <h4 class="color_222 font-medium text-base uppercase mb-3">Комплексное сопровождение пациента 24/7
+                    <h4 class="color_222 font-medium lg:text-base md:text-sm text-base uppercase mb-3">Комплексное сопровождение пациента 24/7
                     </h4>
-                    <p class="color_222 text-base ">Мы предоставляем своим пациентам круглосуточную поддержку и
+                    <p class="color_222 lg:text-base md:text-xs text-sm">Мы предоставляем своим пациентам круглосуточную поддержку и
                         сопровождение на всех этапах.</p>
                 </div>
 
-                <div class="max-w-[336px]">
-                    <div class="border inline-flex border-[#A9A19E] p-5 mb-4">
-                        <img class="max-w-[297.95px] w-full h-[378.9px] object-cover" src="./img/we/3.png"
+                <div class="md:max-w-[336px] max-w-[400px] w-full mx-auto">
+                    <div class="border inline-flex max-w-[400px] h-[194px] lg:h-[416px] w-full border-[#A9A19E] lg:p-5 md:p-2 p-1 md:mb-4 mb-3.5">
+                        <img class="md:max-w-[297.95px] w-full  object-cover" src="./img/we/3.png"
                             alt="Высококвалифицированные специалисты">
                     </div>
-                    <h4 class="color_222 font-medium text-base uppercase mb-3">Высококвалифицированные специалисты</h4>
-                    <p class="color_222 text-base ">В нашей клинике работают только опытные и сертифицированные врачи с
+                    <h4 class="color_222 font-medium lg:text-base md:text-sm text-base uppercase mb-3">Высококвалифицированные специалисты</h4>
+                    <p class="color_222 lg:text-base md:text-xs text-sm">В нашей клинике работают только опытные и сертифицированные врачи с
                         многолетним стажем в области косметологии и пластической хирургии.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="pb-[124px] hidden">
+
+    <section class="pb-[124px]">
         <div class="max-w-[1440px] px-[15px] mx-auto">
-            <p class="text-[#957C55] text-base uppercase">Мы делаем</p>
-            <h2 class="color_222 italic font-baskerville text-[80px] uppercase text-center leading-[64px] mb-5">услуги
+            <p class="text-[#957C55] text-base uppercase md:block hidden">Мы делаем</p>
+            <h2 class="color_222  italic font-baskerville md:text-[80px] text-[35px] uppercase md:text-center text-left leading-[64px] mb-5">услуги
             </h2>
 
-            <div>
+            <div class="md:block hidden" >
                 <!-- FAQ 1 start -->
                 <div class="pt-4 border-b border-b-[#A9A19E] flex items-start">
-                    <div class="max-w-[337px] w-full ">
-                        <h4 class="color_222 italic font-baskerville text-[35px]">1</h4>
+                    <div class="lg:max-w-[337px] max-w-[40px] w-full ">
+                        <h4 class="color_222 italic font-baskerville lg:text-[35px] text-2xl">1</h4>
                     </div>
                     <div class="accordion">
                         <div
                             class="accordion-button border-l pb-5 transition-all max-h-[50px] border-l-[#A9A19E] pl-5 cursor-pointer">
                             <div class="flex items-start justify-between w-full">
                                 <div class="flex flex-col gap-8">
-                                    <p class="color_222 font-baskerville italic text-[30px] uppercase">Аппаратная
+                                    <p class="color_222 font-baskerville italic lg:text-[30px] text-xl uppercase">Аппаратная
                                         косметология</p>
                                     <a class="underline color_222 text-base opacity-0 max-h-0 overflow-hidden hidden faq-text transition-all"
                                         href="#">Узнать цены</a>
                                 </div>
                                 <p
-                                    class="color_222 text-base max-w-[416px] opacity-0 faq-text transition-all hidden max-h-0 overflow-hidden">
+                                    class="color_222 lg:text-base text-sm max-w-[416px] opacity-0 faq-text transition-all hidden max-h-0 overflow-hidden">
                                     Инновационное направление в косметологии,
                                     которое объединяет передовые технологии и медицинские знания для эффективного ухода
                                     за кожей и
@@ -283,21 +277,21 @@
 
                 <!-- FAQ 2 start -->
                 <div class="pt-4 border-b border-b-[#A9A19E] flex items-start">
-                    <div class="max-w-[337px] w-full ">
-                        <h4 class="color_222 italic font-baskerville text-[35px]">2</h4>
+                    <div class="lg:max-w-[337px] max-w-[40px] w-full ">
+                        <h4 class="color_222 italic font-baskerville lg:text-[35px] text-2xl">2</h4>
                     </div>
                     <div class="accordion">
                         <div
                             class="accordion-button border-l pb-5 transition-all max-h-[50px] border-l-[#A9A19E] pl-5 cursor-pointer">
                             <div class="flex items-start justify-between w-full">
                                 <div class="flex flex-col gap-8">
-                                    <p class="color_222 font-baskerville italic text-[30px] uppercase">Инъекционная
+                                    <p class="color_222 font-baskerville italic lg:text-[30px] text-xl uppercase">Инъекционная
                                         косметология</p>
                                     <a class="underline color_222 text-base opacity-0 max-h-0 overflow-hidden hidden faq-text transition-all"
                                         href="#">Узнать цены</a>
                                 </div>
                                 <p
-                                    class="color_222 text-base max-w-[416px] opacity-0 faq-text transition-all hidden max-h-0 overflow-hidden">
+                                    class="color_222 lg:text-base text-sm max-w-[416px] opacity-0 faq-text transition-all hidden max-h-0 overflow-hidden">
                                     Метод эстетической медицины, направленный на улучшение внешности с помощью
                                     инъекционных процедур. Эти процедуры позволяют безопасно и эффективно бороться с
                                     возрастными изменениями, улучшать качество кожи и устранять мимические морщины.</p>
@@ -316,21 +310,21 @@
 
                 <!-- FAQ 3 start -->
                 <div class="pt-4 border-b border-b-[#A9A19E] flex items-start">
-                    <div class="max-w-[337px] w-full ">
-                        <h4 class="color_222 italic font-baskerville text-[35px]">3</h4>
+                    <div class="lg:max-w-[337px] max-w-[40px] w-full ">
+                        <h4 class="color_222 italic font-baskerville lg:text-[35px] text-2xl">3</h4>
                     </div>
                     <div class="accordion">
                         <div
                             class="accordion-button border-l pb-5 transition-all max-h-[50px] border-l-[#A9A19E] pl-5 cursor-pointer">
                             <div class="flex items-start justify-between w-full">
                                 <div class="flex flex-col gap-8">
-                                    <p class="color_222 font-baskerville italic text-[30px] uppercase">Пластическая
+                                    <p class="color_222 font-baskerville italic lg:text-[30px] text-xl uppercase">Пластическая
                                         хирургия</p>
                                     <a class="underline color_222 text-base opacity-0 max-h-0 overflow-hidden hidden faq-text transition-all"
                                         href="#">Узнать цены</a>
                                 </div>
                                 <p
-                                    class="color_222 text-base max-w-[416px] opacity-0 faq-text transition-all hidden max-h-0 overflow-hidden">
+                                    class="color_222 lg:text-base text-sm max-w-[416px] opacity-0 faq-text transition-all hidden max-h-0 overflow-hidden">
                                     Направление медицины, которое позволяет корректировать внешние недостатки и
                                     восстанавливать гармонию лица и тела. Она включает в себя реконструктивную хирургию,
                                     направленную на восстановление функциональности и эстетического вида тела, и
@@ -350,21 +344,21 @@
 
                 <!-- FAQ 4 start -->
                 <div class="pt-4 border-b border-b-[#A9A19E] flex items-start">
-                    <div class="max-w-[337px] w-full ">
-                        <h4 class="color_222 italic font-baskerville text-[35px]">4</h4>
+                    <div class="lg:max-w-[337px] max-w-[40px] w-full ">
+                        <h4 class="color_222 italic font-baskerville lg:text-[35px] text-2xl">4</h4>
                     </div>
                     <div class="accordion">
                         <div
                             class="accordion-button border-l pb-5 transition-all max-h-[50px] border-l-[#A9A19E] pl-5 cursor-pointer">
                             <div class="flex items-start justify-between w-full">
                                 <div class="flex flex-col gap-8">
-                                    <p class="color_222 font-baskerville italic text-[30px] uppercase">Интимные услуги
+                                    <p class="color_222 font-baskerville italic lg:text-[30px] text-xl uppercase">Интимные услуги
                                     </p>
                                     <a class="underline color_222 text-base opacity-0 max-h-0 overflow-hidden hidden faq-text transition-all"
                                         href="#">Узнать цены</a>
                                 </div>
                                 <p
-                                    class="color_222 text-base max-w-[416px] opacity-0 faq-text transition-all hidden max-h-0 overflow-hidden">
+                                    class="color_222 lg:text-base text-sm max-w-[416px] opacity-0 faq-text transition-all hidden max-h-0 overflow-hidden">
                                     Деликатное направление в эстетической медицине, направленное на улучшение внешнего
                                     вида, восстановления и омоложения интимных зон.</p>
                                 <button>
@@ -382,20 +376,20 @@
 
                 <!-- FAQ 5 start -->
                 <div class="pt-4 border-b border-b-[#A9A19E] flex items-start">
-                    <div class="max-w-[337px] w-full ">
-                        <h4 class="color_222 italic font-baskerville text-[35px]">5</h4>
+                    <div class="lg:max-w-[337px] max-w-[40px] w-full ">
+                        <h4 class="color_222 italic font-baskerville lg:text-[35px] text-2xl">5</h4>
                     </div>
                     <div class="accordion">
                         <div
                             class="accordion-button border-l pb-5 transition-all max-h-[50px] border-l-[#A9A19E] pl-5 cursor-pointer">
                             <div class="flex items-start justify-between w-full">
                                 <div class="flex flex-col gap-8">
-                                    <p class="color_222 font-baskerville italic text-[30px] uppercase">Капельницы</p>
+                                    <p class="color_222 font-baskerville italic lg:text-[30px] text-xl uppercase">Капельницы</p>
                                     <a class="underline color_222 text-base opacity-0 max-h-0 overflow-hidden hidden faq-text transition-all"
                                         href="#">Узнать цены</a>
                                 </div>
                                 <p
-                                    class="color_222 text-base max-w-[416px] opacity-0 faq-text transition-all hidden max-h-0 overflow-hidden">
+                                    class="color_222 lg:text-base text-sm max-w-[416px] opacity-0 faq-text transition-all hidden max-h-0 overflow-hidden">
                                     Процедуры внутривенных инфузий, которые содержат витамины, минералы, аминокислоты и
                                     антиоксиданты для улучшения состояния вашей кожи, волос, ногтей и общей само
                                     чувствительности.</p>
@@ -414,6 +408,32 @@
             </div>
         </div>
     </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <section class="pt-[124px] pb-[238px] hidden">
         <h1
@@ -704,6 +724,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/accordion.js"></script>
+    <script src="./js/app.js"></script>
     <script src="./js/sticky.js"></script>
     <script>
         new WOW().init();

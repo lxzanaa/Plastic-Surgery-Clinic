@@ -7,6 +7,9 @@
     src: url(../fonts/ofont.ru_Baskerville\ WGL4\ BT.ttf);
     font-display: swap;
 }
+body{
+    transition: all .3s ease;
+}
 .font-baskerville{
     font-family: 'Baskerville' ;
 }
