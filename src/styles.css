@@ -3,16 +3,16 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'Baskerville';
+    font-family: 'baskerville';
     src: url(../fonts/ofont.ru_Baskerville\ WGL4\ BT.ttf);
-    font-display: swap;
+}
+.font-baskerville{
+    font-family: 'baskerville' !important;
 }
 body{
     transition: all .3s ease;
 }
-.font-baskerville{
-    font-family: 'Baskerville' ;
-}
+
 .color_222{
     color: #222222;
 }

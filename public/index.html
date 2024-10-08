@@ -32,6 +32,35 @@
             display: none;
         }
     }
+    @media (max-width: 1240px) {
+        #hero_text2,
+        #hero_text{
+            font-size: 40px !important;
+        }
+    }
+    @media (max-width: 865px) {
+        #hero_text2,
+        #hero_text{
+            font-size: 30px !important;
+        }
+    }
+
+    @font-face {
+        font-family: 'baskerville';
+        src: url(./fonts/ofont.ru_Baskerville\ WGL4\ BT.ttf);
+    }
+    @font-face {
+        font-family: 'made-evolve';
+        src: url('./fonts/made_evolve_sans/MADE\ Evolve\ Sans\ Regular\ \(PERSONAL\ USE\).otf');
+    }
+
+    body{
+        font-family: 'made-evolve' !important;
+    }
+    .font-baskerville {
+        font-family: 'baskerville' !important;
+        font-style: italic !important;
+    }
 </style>
 
 <body>
@@ -167,13 +196,14 @@
                 </ul>
             </div>
         </div>
+        
         <section class="lg:pt-[294px] pt-[180px] pb-8">
             <div class="max-w-[1440px] md:px-[15px] mx-auto text-center">
-                <h1
-                    class="text-[#F8F8F8] uppercase lg:text-7xl md:text-4xl md:block hidden text-right wow animate__animated animate__fadeInRight">
+                <h1 id="hero_text"
+                    class="text-[#F8F8F8] uppercase lg:text-6xl md:text-4xl md:block hidden text-right wow animate__animated animate__fadeInRight">
                     Клиника пластической хирургии</h1>
-                <h1
-                    class="text-[#F8F8F8] font-baskerville italic uppercase lg:text-7xl md:text-4xl md:block hidden mb-10 text-left wow animate__animated animate__fadeInLeft">
+                <h1 id="hero_text2"
+                    class="text-[#F8F8F8] font-baskerville italic uppercase lg:text-6xl md:text-4xl md:block hidden mb-10 text-left wow animate__animated animate__fadeInLeft">
                     и эстетической косметологии
                 </h1>
                 <h2 class="text-[#F8F8F8] text-2xl text-center uppercase mb-7 md:hidden block">Клиника пластической
@@ -925,7 +955,7 @@
 
                 <div class="lg:hidden block relative overflow-hidden">
                     <div class="mb-20 pt-[134px] grid md:grid-cols-3 gap-10 ">
-                        <span class="absolute top-[-35px] -right-10" >
+                        <span class="absolute top-[-35px] -right-10">
                             <svg width="356" height="553" viewBox="0 0 356 553" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
