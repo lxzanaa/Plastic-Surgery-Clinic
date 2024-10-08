@@ -80,17 +80,54 @@
 
         <section class="py-24">
             <div class="max-w-[1440px] px-[15px] mx-auto text-center">
-                <h1 class="text-[#F8F8F8] uppercase text-7xl font-baskerville italic wow animate__animated animate__fadeInRight">
+                <h1 class="text-[#F8F8F8] uppercase lg:text-7xl md:text-5xl text-[25px] font-baskerville italic wow animate__animated animate__fadeInRight">
                     Бонусная программа</h1>
-                    <p class="text-white/60 text-2xl text-center" >Может быть какое-то описание</p>
+                    <p class="text-white/60 text-2xl max-w-[600px] mx-auto text-center md:block hidden" >Может быть какое-то описание</p>
             </div>
         </section>
     </div>
 
-    <h1 class="py-[100px] max-w-[1440px] mx-auto px-5 text-center text-[#FA0808] italic text-[60px] leading-[60px] font-baskerville uppercase"  >
+    <h1 class="py-[100px] max-w-[1440px] mx-auto px-5 text-center text-[#FA0808] italic lg:text-[60px] lg:leading-[60px] md:text-4xl text-xl font-baskerville uppercase"  >
         Пока не имеем информации насчет подробного заполнения спецпредложения
     </h1>
 
+    <section class="py-8 pb-11 bg-[#222222] md:hidden block">
+        <div class="max-w-[1440px] px-[15px] mx-auto  border-t border-t-[#A9A19E]">
+            <p class="text-[#A9A19E] text-base pt-4 md:block hidden">отзывы</p>
+            <h2
+                class="text-[#F8F8F8] italic font-baskerville lg:text-[80px] lg:leading-[80px] md:text-4xl text-[35px] uppercase md:text-center pb-8">
+                Те, кто нам
+                доверяет</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="max-w-[530.29px] w-full lg:h-[663.2px] md:h-[500px] h-[337.36px] object-cover"
+                            src="./img/slider-2/1.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="max-w-[530.29px] w-full lg:h-[663.2px] md:h-[500px] h-[337.36px] object-cover"
+                            src="./img/slider-2/2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="max-w-[530.29px] w-full lg:h-[663.2px] md:h-[500px] h-[337.36px] object-cover"
+                            src="./img/slider-2/3.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="max-w-[530.29px] w-full lg:h-[663.2px] md:h-[500px] h-[337.36px] object-cover"
+                            src="./img/slider-2/1.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="max-w-[530.29px] w-full lg:h-[663.2px] md:h-[500px] h-[337.36px] object-cover"
+                            src="./img/slider-2/2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="max-w-[530.29px] w-full lg:h-[663.2px] md:h-[500px] h-[337.36px] object-cover"
+                            src="./img/slider-2/3.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <div class="bg-[#222222]">
         <section class="pt-11 ">
             <div class="max-w-[1440px] px-[15px] mx-auto flex items-center justify-between">
@@ -249,9 +286,19 @@
         new WOW().init();
     </script>
     <script>
-        var swiper = new Swiper(".mySwiper", {
+          var swiper = new Swiper(".mySwiper", {
             slidesPerView: 2.5,
             spaceBetween: 30,
+            breakpoints: {
+                100: {
+                    slidesPerView: 1.2,
+                    spaceBetween: 18,
+                },
+                640: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 18,
+                },
+            },
         });
     </script>
 </body>

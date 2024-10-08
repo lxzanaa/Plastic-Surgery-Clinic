@@ -42,3 +42,22 @@ body{
 .appear {
     transform: translateX(0);
 }
+@media (max-width: 1250px) {
+    .header-mobile {
+        max-width: 700px;
+    }
+
+    .header_number {
+        font-size: 18px;
+    }
+
+    .header_items {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 1035px) {
+    .header_items {
+        display: none;
+    }
+}
